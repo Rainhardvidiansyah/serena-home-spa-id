@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Serena Home Spa — Pijat Panggilan</title>
+<meta name="description" content="Serena Home Spa adalah jasa pijat panggilan (tradisional, refleksi, dan deep tissue) untuk pekerja kantoran. Terapis datang langsung ke rumah Anda, buka setiap hari 09.00-21.00. Booking via WhatsApp.">
+<meta name="keywords" content="pijat panggilan, pijat refleksi, pijat tradisional, deep tissue, pijat, pijat capek kerja, jasa pijat Bandung">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.serenahomespa.id/">
+ 
+<!-- Open Graph / sosial media -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Serena Home Spa">
+<meta property="og:title" content="Serena Home Spa — Pijat Panggilan & Refleksi untuk Pekerja Lelah">
+<meta property="og:description" content="Layanan pijat panggilan tradisional, refleksi, dan deep tissue langsung ke rumah Anda. Booking via WhatsApp.">
+<meta property="og:url" content="https://www.serenahomespa.id/">
+<meta property="og:locale" content="id_ID">
+
+<!-- GANTI: og:image idealnya 1200x630px, foto tempat/terapis -->
+<meta property="og:image" content="https://www.serenahomespa.id/og-image.jpg">
+ 
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Serena Home Spa — Pijat Panggilan & Refleksi untuk Pekerja Lelah">
+<meta name="twitter:description" content="Layanan pijat panggilan tradisional, refleksi, dan deep tissue langsung ke rumah Anda.">
+ 
+<!-- Data terstruktur untuk Google (LocalBusiness) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MassageTherapist",
+  "name": "Serena Home Spa",
+  "image": "https://www.serenahomespa.id/og-image.jpg",
+  "url": "https://www.serenahomespa.id/",
+  "telephone": "+6285132479415",
+  "priceRange": "Rp120.000 - Rp230.000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Kota Bandung",
+    "addressLocality": "Bandung",
+    "addressCountry": "ID"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "09:00",
+    "closes": "21:00"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Layanan Pijat",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pijat Tradisional" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pijat Refleksi" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Deep Tissue / Terapi" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pijat Panggilan" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refleksi" } }
+    ]
+  }
+}
+</script>
+ 
+<style>
+
+
+  :root{
+    --bg:        #EEEAE3;
+    --bg-soft:   #E4DFD5;
+    --ink:       #23302A;
+    --ink-soft:  #55635B;
+    --sage:      #6B8F71;
+    --sage-deep: #4B6B52;
+    --clay:      #BD6B4B;
+    --line:      #D2CBBC;
+    --white:     #FBFAF7;
+  }
+ 
+  *{box-sizing:border-box; margin:0; padding:0;}
+ 
+  @font-face{
+    font-family:'Instrument Serif';
+    src: local('Instrument Serif');
+  }
+ 
+  html{scroll-behavior:smooth;}
+ 
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.5;
+  }
+ 
+  img{max-width:100%; display:block;}
+ 
+  a{color:inherit;}
+ 
+  .wrap{
+    max-width:1120px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+ 
+  .mono{
+    font-family:'IBM Plex Mono', ui-monospace, monospace;
+    letter-spacing:0.02em;
+  }
+ 
+  .eyebrow{
+    font-family:'IBM Plex Mono', ui-monospace, monospace;
+    font-size:12.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--sage-deep);
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:16px; height:1px;
+    background:var(--sage-deep);
+  }
+ 
+  /* ---------- Nav ---------- */
+  header{
+    position:sticky; top:0; z-index:40;
+    background:rgba(238,234,227,0.85);
+    backdrop-filter: blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  nav.wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    height:72px;
+  }
+  .brand{
+    font-family:'Instrument Serif', Georgia, serif;
+    font-size:24px;
+    letter-spacing:0.01em;
+  }
+
+  .brand span{color:var(--sage-deep);}
+  .navlinks{
+    display:flex; gap:32px;
+    font-size:14.5px;
+    color:var(--ink-soft);
+  }
+
+
+
+  /*MULAI ABOUT*/
+  .about-section{
+  background:
+    linear-gradient(rgba(238,234,227,0.88), rgba(255, 237, 134, 0.405)),
+    url('assets/images/about.jpeg');
+  background-size:cover;
+  background-position:center;
+  padding:76px 0;
+}
+  /*AKHIR ABOUT*/
+
+
+
+  /*Mulai Manfaat*/
+  .manfaat-section{
+  background:
+    /*linear-gradient(rgba(225, 233, 9, 0.88), rgba(118, 114, 109, 0.88)),*/
+    url('assets/images/pewangi.jpeg');
+  background-size:cover;
+  background-position:center;
+  padding:76px 0;
+  }
+
+  /*Akhir Manfaat*/
+
+  .nav-cta-mobile{display:none;}
+  .nav-toggle{
+  display:none; flex-direction:column; justify-content:center; gap:5px;
+  width:36px; height:36px; background:none; border:none; cursor:pointer; padding:0;
+  }
+  .nav-toggle span{
+  display:block; width:100%; height:2px; background:var(--ink); border-radius:2px;
+  transition:transform .25s ease, opacity .25s ease;
+  }
+.nav-toggle.is-active span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.nav-toggle.is-active span:nth-child(2){opacity:0;}
+.nav-toggle.is-active span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+  .navlinks a{text-decoration:none; transition:color .2s;}
+  .navlinks a:hover{color:var(--ink);}
+  .nav-cta{
+    background:var(--ink);
+    color:var(--white);
+    font-size:14px;
+    padding:10px 18px;
+    border-radius:999px;
+    text-decoration:none;
+    white-space:nowrap;
+  }
+
+
+
+  @media (max-width:760px){
+  .navlinks{
+    display:none; position:absolute; top:100%; left:0; right:0;
+    flex-direction:column; gap:0; background:var(--white); border:1px solid var(--line);
+    border-radius:14px; padding:10px; margin-top:8px; box-shadow:0 12px 30px rgba(35,48,42,0.12);
+  }
+  .navlinks.open{display:flex;}
+  .navlinks a{padding:13px 12px; border-radius:8px; color:var(--ink);}
+  .navlinks a:hover{background:var(--bg-soft);}
+  .nav-cta-mobile{display:block; text-align:center; margin-top:6px;}
+  .nav-cta-desktop{display:none;}
+  .nav-toggle{display:flex;}
+}
+ 
+  /* ---------- Hero ---------- */
+  .hero{
+    padding:88px 0 60px;
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:56px;
+    align-items:center;
+  }
+  @media (max-width:900px){ .hero{grid-template-columns:1fr; padding:56px 0 40px;} }
+ 
+  .hero h1{
+    font-family:'Instrument Serif', Georgia, serif;
+    font-weight:400;
+    font-size:clamp(38px, 5.4vw, 64px);
+    line-height:1.06;
+    margin:20px 0 22px;
+    letter-spacing:-0.01em;
+  }
+  .hero h1 em{
+    font-style:normal;
+    color:var(--sage-deep);
+  }
+
+  .hero p.lead{
+    font-size:25px;
+    color:var(--ink-soft);
+    max-width:46ch;
+    margin-bottom:32px;
+  }
+
+  .cta-row{
+    display:flex; align-items:center; gap:18px; flex-wrap:wrap;
+  }
+  .btn-primary{
+    background:var(--ink);
+    color:var(--white);
+    text-decoration:none;
+    padding:15px 26px;
+    border-radius:999px;
+    font-size:15px;
+    font-weight:500;
+    display:inline-flex; align-items:center; gap:10px;
+    transition:transform .2s ease, background .2s ease;
+  }
+  .btn-primary:hover{background:var(--sage-deep); transform:translateY(-1px);}
+  .btn-ghost{
+    text-decoration:none;
+    font-size:15px;
+    color:var(--ink);
+    border-bottom:1px solid var(--ink);
+    padding-bottom:2px;
+  }
+ 
+  /* tension-to-calm signature graphic */
+  .wave-card{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:28px 24px 22px;
+  }
+  .wave-card .cap{
+    display:flex; justify-content:space-between;
+    font-size:12px; color:var(--ink-soft);
+    margin-bottom:6px;
+  }
+  .wave-svg{width:100%; height:160px;}
+  .wave-labels{
+    display:flex; justify-content:space-between;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    margin-top:6px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+  }
+ 
+  /* ---------- Section shell ---------- */
+  section{padding:76px 0;}
+  .section-head{
+    max-width:640px;
+    margin-bottom:44px;
+  }
+  .section-head h2{
+    font-family:'Instrument Serif', Georgia, serif;
+    font-weight:400;
+    font-size:clamp(28px,3.4vw,40px);
+    margin-top:14px;
+    letter-spacing:-0.01em;
+  }
+  .section-head p{
+    color:var(--ink-soft);
+    margin-top:12px;
+    font-size:16px;
+  }
+ 
+  hr.divider{
+    border:none; border-top:1px solid var(--line);
+  }
+ 
+  /* ---------- Manfaat ---------- */
+  .benefits{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+    /*background:var(--line);*/
+    border:px solid var(--line);
+    border-radius:16px;
+    overflow:hidden;
+  }
+  @media (max-width:900px){ .benefits{grid-template-columns:repeat(2,1fr);} }
+  .benefit{
+    background:var(--white);
+    padding:28px 22px;
+  }
+  .benefit .num{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--sage-deep);
+  }
+  .benefit h3{
+    font-size:16.5px;
+    font-weight:600;
+    margin:14px 0 8px;
+  }
+  .benefit p{
+    font-size:14.5px;
+    color:var(--ink-soft);
+  }
+ 
+  /* ---------- Layanan ---------- */
+  .services{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+  }
+  @media (max-width:760px){ .services{grid-template-columns:1fr;} }
+  .service-card{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:28px;
+    display:flex; flex-direction:column;
+    transition:border-color .2s ease, transform .2s ease;
+  }
+  .service-card:hover{border-color:var(--sage); transform:translateY(-2px);}
+  .service-top{
+    display:flex; justify-content:space-between; align-items:flex-start;
+    margin-bottom:14px;
+  }
+  .service-card h4{font-size:19px; font-weight:600;}
+ 
+  .cat-chips{
+    display:flex; flex-wrap:wrap; gap:10px;
+    margin-bottom:36px;
+    list-style:none;
+  }
+  .cat-chips a{
+    text-decoration:none;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    background:var(--white);
+    border:1px solid var(--line);
+    padding:8px 16px;
+    border-radius:999px;
+    transition:border-color .2s ease, color .2s ease;
+  }
+  .cat-chips a:hover{border-color:var(--sage); color:var(--ink);}
+ 
+  .cat-group{margin-bottom:36px; scroll-margin-top:90px;}
+  .cat-group:last-child{margin-bottom:0;}
+ 
+  /* ---------- Paket layanan (kartu gelap) ---------- */
+  .pkg-section{
+    /*background:var(--ink);*/
+    background:rgba(231, 196, 138, 0.55);
+    padding:76px 0;
+  }
+  .light-on-dark{max-width:640px; margin-bottom:44px;}
+  .eyebrow-dark{color:#B7C9BC;}
+  .eyebrow-dark::before{background:#B7C9BC;}
+  .h2-dark{
+    font-family:'Instrument Serif', Georgia, serif;
+    font-weight:400;
+    font-size:clamp(28px,3.4vw,40px);
+    margin-top:14px;
+    color:var(--white);
+    letter-spacing:-0.01em;
+  }
+  .p-dark{color:#f8fcf9; margin-top:12px; font-size:16px;}
+ 
+  /*.pkg-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+  }*/
+  .pkg-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+  align-items:start;
+}
+  @media (max-width:900px){ .pkg-grid{grid-template-columns:1fr;} }
+ 
+  .pkg-card{
+    display:flex; flex-direction:column;
+  }
+  .pkg-img img{
+    aspect-ratio:4/3;
+    border-radius:18px;
+    margin-bottom:22px;
+    background:linear-gradient(135deg, #4B6B52, #23302A);
+    display:flex; align-items:center; justify-content:center;
+    color:rgba(255,255,255,0.55);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    /*flex-shrink:0;*/
+  }
+  .pkg-title{
+    font-family:'Instrument Serif', Georgia, serif;
+    font-weight:400;
+    font-size:26px;
+    color:black;
+    margin-bottom:14px;
+    line-height:1.2;
+  }
+  .pkg-desc{
+    color:#AEB9B2;
+    font-size:15px;
+    margin-bottom:22px;
+    flex-grow:1;
+  }
+  .pkg-prices{
+    display:flex; flex-wrap:wrap; gap:8px 24px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13.5px;
+    color:#DCE3DE;
+    margin-bottom:24px;
+  }
+  .pkg-btn{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    background:#D3A55A;
+    color:#2A2114;
+    font-weight:600;
+    font-size:15px;
+    padding:15px 20px;
+    border-radius:999px;
+    transition:background .2s ease, transform .2s ease;
+  }
+  .pkg-btn:hover{background:#E4B96E; transform:translateY(-1px);}
+
+
+  .pkg-footnote{
+    margin-top:40px;
+    font-size:12.5px;
+    color:#8B978E;
+    max-width:70ch;
+  }
+  .cat-title{
+    font-size:14px;
+    font-family:'IBM Plex Mono', monospace;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--sage-deep);
+    margin-bottom:14px;
+  }
+  .service-price{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    background:var(--bg-soft);
+    padding:5px 10px;
+    border-radius:8px;
+    white-space:nowrap;
+  }
+  .service-card p{
+    color:var(--ink-soft);
+    font-size:14.5px;
+    margin-bottom:16px;
+  }
+  .service-meta{
+    margin-top:auto;
+    display:flex; gap:14px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--sage-deep);
+  }
+
+  
+ 
+  /* ---------- Testimoni ---------- */
+  .testimonials{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+  }
+  @media (max-width:900px){ .testimonials{grid-template-columns:1fr;} }
+  .t-card{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:26px;
+  }
+  .t-card p.quote{
+    font-size:15.5px;
+    color:var(--ink);
+    margin-bottom:18px;
+  }
+  .t-who{
+    display:flex; align-items:center; gap:10px;
+    font-size:13.5px;
+    color:var(--ink-soft);
+  }
+  .t-who .dot{
+    width:8px; height:8px; border-radius:50%;
+    background:var(--sage);
+  }
+ 
+  /* ---------- Lokasi / CTA ---------- */
+  .cta-block{
+    background:var(--ink);
+    color:var(--white);
+    border-radius:24px;
+    padding:56px;
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:40px;
+    align-items:center;
+  }
+  @media (max-width:900px){ .cta-block{grid-template-columns:1fr; padding:36px 26px;} }
+  .cta-block h2{
+    font-family:'Instrument Serif', Georgia, serif;
+    font-weight:400;
+    font-size:clamp(28px,3.6vw,40px);
+    line-height:1.1;
+  }
+  .cta-block p{
+    color:#C9CFC9;
+    margin-top:14px;
+    font-size:15.5px;
+    max-width:44ch;
+  }
+
+
+
+  .info-list{
+    display:flex; flex-direction:column; gap:16px;
+  }
+  .info-row{
+    display:flex; justify-content:space-between; align-items:flex-start; gap:20px;
+    border-bottom:1px solid rgba(255,255,255,0.14);
+    padding-bottom:12px;
+    font-size:14.5px;
+  }
+  .info-row .k{
+    color:#9BA69E; font-family:'IBM Plex Mono', monospace; font-size:12px;
+    text-transform:uppercase; letter-spacing:.06em;
+    flex-shrink:0; width:110px;
+  }
+  .info-row > span:last-child{
+    text-align:right; flex:1;
+  }
+
+
+  .cta-block .btn-primary{
+    background:var(--sage);
+    margin-top:26px;
+  }
+  .cta-block .btn-primary:hover{background:var(--white); color:var(--ink);}
+ 
+  /* ---------- Footer ---------- */
+  footer{
+    padding:36px 0 110px;
+    color:var(--ink-soft);
+    font-size:13.5px;
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+  }
+ 
+  /* ---------- Floating WA button ---------- */
+  .float-wa{
+    position:fixed; right:22px; bottom:22px; z-index:50;
+    background:#3F6B48;
+    color:var(--white);
+    text-decoration:none;
+    padding:14px 20px;
+    border-radius:999px;
+    font-size:14px;
+    font-weight:500;
+    display:flex; align-items:center; gap:9px;
+    box-shadow:0 10px 30px rgba(35,48,42,0.28);
+    transition:transform .2s ease;
+  }
+  .float-wa:hover{transform:translateY(-2px);}
+ 
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .wave-path{animation:none !important;}
+  }
+
+
+
+
+  /*Gratis Transportasi*/
+  .promo-banner{
+  background:
+    linear-gradient(rgba(20,16,12,0.62), rgba(20,16,12,0.62)),
+    linear-gradient(135deg, #4B3A2E, #23302A);
+  background-size:cover;
+  background-position:center;
+  min-height:280px;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  padding:40px 60px;
+}
+.promo-inner h2{
+  font-family:'Instrument Serif', Georgia, serif;
+  font-weight:400;
+  font-size:clamp(28px, 4.6vw, 52px);
+  color:var(--white);
+  text-align:right;
+  letter-spacing:-0.01em;
+}
+/*Akhir Gratis Transportasi*/
+
+
+
+
+/*Mulai hover menu*/
+
+/* Gaya dasar untuk menu navigasi */
+
+/*Akhir hover menu*/
+
+.hero{
+  position:relative;
+  background:
+  linear-gradient(rgba(238,234,227,0.88), rgba(236, 238, 227, 0.405)),
+  url('assets/images/hero.jpeg');
+  background-size:cover;
+  background-position:center;
+  min-height:560px;
+  display:flex;
+  align-items:center;
+}
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(rgba(20,16,12,0.55), rgba(20,16,12,0.55));
+}
+.hero-content{
+  position:relative;
+  z-index:1;
+  text-align:center;
+  padding:60px 28px;
+}
+
+.hero-content{
+  text-align:center;
+  max-width:720px;
+  margin:0 auto;
+  padding:60px 28px;
+}
+
+
+.hero .eyebrow{ color:#D9E2DC; justify-content:center; }
+.hero .eyebrow::before{ background:#D9E2DC; }
+.hero h1{ color:#FBFAF7; }
+.hero h1 em{ color:#B7CBBE; } /* aksen hijau muda biar kebaca di foto gelap */
+.hero p.lead{ color:#E3E7E1; }
+.hero .btn-ghost{ color:#FBFAF7; border-bottom-color:#FBFAF7; }
+
+
+
+.hero-content .lead{
+  max-width:640px;
+  margin:0 auto 32px;
+  text-align:center;
+}
+
+.hero-content .cta-row{
+  justify-content:center;
+}
+
+
+
+.pkg-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:18px;
+  overflow:hidden;        /* ini yang baru — biar foto ke-crop rapi di dalam kotak */
+  position:relative;
+}
+
+
+
+/* Mulai Testimoni */
+.testimoni-section{
+   background:
+    linear-gradient(rgba(230,183,109,0.7), rgba(230,183,109,0.7)),
+    url('assets/images/rileks.jpeg');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding:76px 0;
+}
+/*Akhir Testimoni*/
+
+
+
+.eyebrow-dark{ color:var(--ink-soft); }
+.eyebrow-dark::before{ background:var(--ink-soft); }
+.h2-dark{ color:var(--ink); }
+.p-dark{ color:var(--ink-soft); }
+.pkg-title{ color:var(--ink); }
+.pkg-desc{ color:var(--ink-soft); }
+.pkg-prices{ color:var(--ink); }
+.pkg-footnote{ color:var(--ink-soft); }
+
+
+/* AREA */
+
+.area-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center; /* ganti ke flex-start kalau mau sejajar ke atas, bukan tengah */
+  gap:24px;
+  flex-wrap:wrap;
+}
+
+.area-left{
+  flex:1 1 400px;
+}
+
+transportation{
+  padding: 24px 28px;
+  flex: 0 0 auto;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  text-align: left;
+}
+
+.area-chip{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  background:var(--white);
+  border:1px solid var(--line);
+  padding:10px 20px;
+  border-radius:999px;   /* ini yang bikin bentuknya lonjong/pill */
+  font-size:14.5px;
+  color:var(--ink);
+}
+
+.area-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.transportation h1{
+  font-size: 20px;
+  margin: 0;
+}
+
+.area-row{
+  padding: 76px 0 40px; /* padding atas tetap 76px, padding bawah dikecilkan jadi 40px */
+}
+
+
+/* Akhir AREA*/
+
+
+/*AWAL FOOTER*/
+.site-footer{
+  background:#1B2620;
+  
+  padding:56px 0 32px;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr 1fr;
+  gap:32px;
+}
+@media (max-width:760px){ .footer-grid{grid-template-columns:1fr 1fr; row-gap:32px;} }
+.footer-col h4{
+  color:var(--white);
+  font-size:15px;
+  font-weight:600;
+  margin-bottom:16px;
+}
+.footer-col p{
+  color:#f1f6f2;
+  font-size:14px;
+  line-height:1.6;
+}
+.footer-col a{
+  display:block;
+  color:#f1f6f2;
+  text-decoration:none;
+  font-size:14px;
+  margin-bottom:10px;
+  transition:color .2s ease;
+}
+
+.footer-col a:hover{color:var(--white);}
+
+
+.footer-wa{
+  display:inline-flex !important;
+  align-items:center;
+  gap:8px;
+  background:#6f7670;
+  color:var(--white) !important;
+  padding:10px 18px;
+  border-radius:999px;
+  font-weight:500;
+}
+.footer-divider{
+  border:none;
+  border-top:1px solid rgba(255,255,255,0.12);
+  margin:40px 0 24px;
+}
+.footer-copy{
+  text-align:center;
+  color:#9BA69E;
+  font-size:13px;
+}
+/*AKHIR FOOTER*/
+
+</style>
+</head>
+
+
+<body>
+ 
+
+
+
+
+<header>
+  <nav class="wrap">
+    <div class="brand">Serena Home Spa</div>
+    <div class="navlinks" id="navlinks">
+      <a href="#home">Home</a>
+      <a href="#layanan">Service</a>
+      <a href="#about">About</a>
+      <a href="#area">Area</a>
+      <a href="#contact">Contact Us</a>
+      <!-- <a class="nav-cta nav-cta-mobile" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Booking</a> -->
+    </div>
+    <a class="nav-cta nav-cta-desktop" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Booking</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navlinks">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navlinks');
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    navToggle.classList.toggle('is-active', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+</script>
+
+
+
+
+ 
+<main>
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="wrap hero-content">
+    <p class="eyebrow">Layanan pijat panggilan ke rumah</p>
+    <h1>Dari tegang, kembali tenang</h1>
+    <p class="lead">
+      Lelah setelah seharian beraktivitas itu wajar. Serena Home Spa hadir memberi jeda lewat pijat panggilan profesional, langsung ke rumah Anda. Pesan dengan mudah, harga bersahabat, tanpa biaya transportasi tambahan.
+    </p>
+    <div class="cta-row">
+      <a class="btn-primary" href="https://wa.me/6285132479415" target="_blank" rel="noopener">
+        Konsultasi gratis &amp; booking via WhatsApp →
+      </a>
+      <a class="btn-ghost" href="#layanan">Lihat layanan</a>
+    </div>
+  </div>
+</section>
+ 
+  <div class="wrap"><hr class="divider"></div>
+ 
+  <!-- ================= ABOUT ================= -->
+
+  <section id="about" class="about-section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Tentang kami</p>
+      <h2>Serena Home Spa, tempat kembali untuk tubuh yang bekerja keras.</h2>
+      <p>
+        Kami percaya pemulihan bukan sekadar layanan, tapi bentuk kepedulian.
+        Setiap sesi pijat dijalankan oleh terapis terlatih dengan standar kebersihan
+        dan keramahan yang konsisten — di ruang kami maupun langsung di rumah Anda.
+      </p>
+    </div>
+    <div class="benefits">
+      <div class="benefit">
+        <div class="num mono">01</div>
+        <h3>Tulus</h3>
+        <p>Pelayanan yang sungguh-sungguh, bukan sekadar transaksi.</p>
+      </div>
+      <div class="benefit">
+        <div class="num mono">02</div>
+        <h3>Amanah</h3>
+        <p>Jadwal, harga, dan kualitas layanan selalu sesuai yang dijanjikan.</p>
+      </div>
+      <div class="benefit">
+        <div class="num mono">03</div>
+        <h3>Profesional</h3>
+        <p>Terapis terlatih dengan teknik yang tepat dan aman.</p>
+      </div>
+      <div class="benefit">
+        <div class="num mono">04</div>
+        <h3>Tenang</h3>
+        <p>Suasana yang menenangkan di setiap sesi, dari awal hingga akhir.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+  <div class="wrap"><hr class="divider"></div>
+ 
+  <!-- ================= MANFAAT ================= -->
+  <section id="manfaat" class="manfaat-section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Kenapa tubuh Anda butuh ini</p>
+      <h2>Lelah kerja modern butuh solusi yang menyentuh langsung akar masalahnya.</h2>
+    </div>
+    <div class="benefits">
+      <div class="benefit">
+        <div class="num mono">01</div>
+        <h3>Leher &amp; punggung lega</h3>
+        <p>Meredakan kaku akibat duduk lama di depan layar atau meeting berjam-jam.</p>
+      </div>
+      <div class="benefit">
+        <div class="num mono">02</div>
+        <h3>Stres mereda</h3>
+        <p>Menurunkan tekanan pikiran lewat relaksasi otot dan sirkulasi yang lebih lancar.</p>
+      </div>
+      <div class="benefit">
+        <div class="num mono">03</div>
+        <h3>Tidur lebih nyenyak</h3>
+        <p>Tubuh yang rileks membantu istirahat malam jadi lebih berkualitas.</p>
+      </div>
+      <div class="benefit">
+        <div class="num mono">04</div>
+        <h3>Siap kerja lagi</h3>
+        <p>Energi pulih, fokus kembali tajam untuk aktivitas esok hari.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- <div class="wrap"><hr class="divider"></div> -->
+ 
+  
+  <!-- ================= LAYANAN ================= -->
+  <section id="layanan" class="pkg-section">
+    <div class="wrap">
+      <div class="section-head light-on-dark">
+        <p class="eyebrow eyebrow-dark">Pilihan paket</p>
+        <h2 class="h2-dark">13 paket pijat panggilan, sesuai kebutuhan Anda.</h2>
+        <p class="p-dark"><b>Semua layanan kami datangi langsung ke rumah Anda.</b></p>
+      </div>
+ 
+      <div class="pkg-grid">
+        <article class="pkg-card">
+          <div class="pkg-img"><img src="assets/images/m-refleksi-kaki.jpeg" alt="Refleksi kaki"></div>
+          <h3 class="pkg-title">Refleksi Kaki</h3>
+          <p class="pkg-desc">Pijat titik refleksi pada telapak kaki untuk melancarkan sirkulasi darah dan meredakan kelelahan.</p>
+          <div class="pkg-prices">
+            <span>60 Menit = Rp78K</span>
+            <span>90 Menit = Rp125K</span>
+          </div>
+          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
+        </article>
+ 
+        <article class="pkg-card">
+          <div class="pkg-img"><img src="assets/images/m-pijat-full-body.jpeg" alt="Pijat full body"></div>
+          <h3 class="pkg-title">Pijat Full Body</h3>
+          <p class="pkg-desc">Pijat seluruh tubuh untuk melepas pegal dan mengendurkan otot yang tegang akibat aktivitas harian.</p>
+          <div class="pkg-prices">
+            <span>60 Menit = Rp99K</span>
+          </div>
+          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
+        </article>
+ 
+        <article class="pkg-card">
+          <div class="pkg-img"><img src="assets/images/m-pijat-kerokan.jpeg" alt="Pijat & Kerokan"></div>
+          <h3 class="pkg-title">Pijat &amp; Kerokan</h3>
+          <p class="pkg-desc">Kombinasi pijat dan kerokan tradisional untuk meredakan masuk angin, pegal, dan linu di badan.</p>
+          <div class="pkg-prices">
+            <span>90 Menit = Rp144K</span>
+          </div>
+          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
+        </article>
+ 
+        <article class="pkg-card">
+          <div class="pkg-img"><img src="assets/images/m-pijat-totok-wajah.jpeg" alt="Totok Wajah"></div>
+          <h3 class="pkg-title">Pijat + Totok Wajah</h3>
+          <p class="pkg-desc">Kombinasi pijat tubuh dan totok wajah, merilekskan otot sekaligus menyegarkan wajah.</p>
+          <div class="pkg-prices">
+            <span>90 Menit = Rp144K</span>
+          </div>
+          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
+        </article>
+ 
+        <article class="pkg-card">
+          <div class="pkg-img"><img src="assets/images/m-pijat-hotstone.jpeg" alt="Pijat Hot Stone"></div>
+          <h3 class="pkg-title">Pijat Hot Stone</h3>
+          <p class="pkg-desc">Pijat dengan batu hangat untuk relaksasi yang lebih dalam dan melancarkan peredaran darah.</p>
+          <div class="pkg-prices">
+            <span>90 Menit = Rp199K</span>
+          </div>
+          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
+        </article>
+ 
+        <article class="pkg-card">
+          <div class="pkg-img"><img src="assets/images/m-slimming-fat.jpeg" alt="Terapi Slimming Fat"></div>
+          <h3 class="pkg-title">Terapi Slimming Fat</h3>
+          <p class="pkg-desc">Pijat khusus yang membantu membakar lemak dan membentuk kontur tubuh lebih ideal.</p>
+          <div class="pkg-prices">
+            <span>60 Menit = Rp150K</span>
+            <span>90 Menit = Rp198K</span>
+          </div>
+          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
+        </article>
+ 
+        <article class="pkg-card">
+          <div class="pkg-img"><img src="assets/images/m-fullbody-refleksi.jpeg" alt="Pijat Full Body + Refleksi"></div>
+          <h3 class="pkg-title">Pijat Full Body + Refleksi</h3>
+          <p class="pkg-desc">Perpaduan pijat seluruh tubuh dan refleksi kaki untuk manfaat relaksasi yang lebih menyeluruh.</p>
+          <div class="pkg-prices">
+            <span>90 Menit = Rp150K</span>
+            <span>120 Menit = Rp189K</span>
+          </div>
+          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
+        </article>
+ 
+        <article class="pkg-card">
+          <div class="pkg-img"><img src="assets/images/m-pijat-bekam.jpeg" alt="Pijat + Bekam"></div>
+          <h3 class="pkg-title">Pijat + Bekam</h3>
+          <p class="pkg-desc">Pijat & bekam untuk keluarkan racun tubuh dan redakan nyeri otot.</p>
+          <div class="pkg-prices">
+            <span>60 Menit = Rp198K</span>
+            <span>90 Menit = Rp249K</span>
+            <!-- <span>120 Menit = Rp288K</span> -->
+          </div>
+          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
+        </article>
+ 
+        <article class="pkg-card">
+          <div class="pkg-img"><img src="assets/images/m-pijat-lulur.jpeg" alt="Pijat + Lulur"></div>
+          <h3 class="pkg-title">Pijat + Lulur Badan</h3>
+          <p class="pkg-desc">Pijat dengan lulur untuk mengangkat sel kulit mati dan membuat kulit lebih halus dan cerah.</p>
+          <div class="pkg-prices">
+            <span>90 Menit = Rp165K</span>
+            <span>120 Menit = Rp192K</span>
+          </div>
+          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
+        </article>
+ 
+        <article class="pkg-card">
+          <div class="pkg-img"><img src="assets/images/m-pra-melahirkan.jpeg" alt="Pijat Pra Melahirkan"></div>
+          <h3 class="pkg-title">Paket Pra Melahirkan</h3>
+          <p class="pkg-desc">Pijat khusus ibu hamil untuk meredakan pegal dan menenangkan tubuh menjelang persalinan.<sup>*</sup></p>
+          <div class="pkg-prices">
+            <span>90 Menit = Rp198K</span>
+          </div>
+          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
+        </article>
+ 
+        <article class="pkg-card">
+          <div class="pkg-img"><img src="assets/images/m-terapi-stroke.jpeg" alt="Terapi Stroke"></div>
+          <h3 class="pkg-title">Terapi Stroke</h3>
+          <p class="pkg-desc">Pijat terapi dengan teknik khusus untuk membantu proses pemulihan pasca-stroke.<sup>*</sup></p>
+          <div class="pkg-prices">
+            <span>90 Menit = Rp144K</span>
+          </div>
+          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
+        </article>
+ 
+        <article class="pkg-card">
+          <div class="pkg-img"><img src="assets/images/m-terapi-diabetes.jpeg" alt="Terapi Diabetes"></div>
+          <h3 class="pkg-title">Terapi Diabetes</h3>
+          <p class="pkg-desc">Pijat terapi pada titik-titik tertentu sebagai pelengkap relaksasi bagi penderita diabetes.<sup>*</sup></p>
+          <div class="pkg-prices">
+            <span>90 Menit = Rp144K</span>
+          </div>
+          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
+        </article>
+ 
+        <article class="pkg-card">
+          <div class="pkg-img"><img src="assets/images/m-terapi-otot.jpeg" alt="Pijat Cedera Otot"></div>
+          <h3 class="pkg-title">Pijat Cedera Otot</h3>
+          <p class="pkg-desc">Pijat terapi untuk membantu pemulihan otot yang cedera atau mengalami ketegangan berlebih.<sup>*</sup></p>
+          <div class="pkg-prices">
+            <span>90 Menit = Rp168K</span>
+            <span>120 Menit = Rp210K</span>
+          </div>
+          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
+        </article>
+ 
+       
+    </div>
+  </section>
+ 
+  <!-- ================= TESTIMONI ================= -->
+  <section id="testimoni" class="testimoni-section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Kata mereka</p>
+      <h2>Pekerja kantoran yang sudah lebih tenang.</h2>
+    </div>
+    <div class="testimonials">
+      <div class="t-card">
+        <p class="quote">Badan berasa ringan setelah kerja WFH tanpa henti. Terapisnya juga tepat waktu.</p>
+        <div class="t-who"><span class="dot"></span> <!-- GANTI: nama & profesi --> Dian, Staf Marketing</div>
+      </div>
+      <div class="t-card">
+        <p class="quote">Layanan panggilannya sangat membantu, tidak perlu keluar rumah setelah lembur.</p>
+        <div class="t-who"><span class="dot"></span> <!-- GANTI: nama & profesi --> Rangga, Software Engineer</div>
+      </div>
+      <div class="t-card">
+        <p class="quote">Tidur jadi lebih nyenyak sejak rutin pijat refleksi tiap minggu.</p>
+        <div class="t-who"><span class="dot"></span> <!-- GANTI: nama & profesi --> Sari, Guru</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+
+  
+   <!-- ================= AREA LAYANAN ================= -->
+  <!-- ================= AREA LAYANAN ================= -->
+<div id="area"class="wrap">
+  <div class="area-row">
+    <div class="area-left">
+      <div class="section-head">
+        <p class="eyebrow">Area layanan</p>
+        <h2>Kami datang langsung ke lokasi Anda di area berikut.</h2>
+      </div>
+      <div class="area-list">
+        <span class="area-chip">📍 Kota Bandung</span>
+        <span class="area-chip">📍 Cimahi</span>
+        <span class="area-chip">📍 Kabupaten Bandung</span>
+      </div>
+    </div>
+    <div class="transportation">
+      <h1># Gratis Biaya Transportasi</h1>
+    </div>
+  </div>
+</div>
+
+ <!-- ================= PROMO BANNER ================= -->
+    <!-- <section class="promo-banner">
+      <div class="promo-inner">
+        <h2>#Gratis Biaya Transportasi</h2>
+      </div>
+    </section> -->
+</main>
+
+
+
+
+
+<!-- /*BARU*/ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Serena Home Spa</h4>
+        <p>Jasa pijat panggilan terpercaya untuk pekerja lelah di Bandung Raya. Terapis datang langsung ke rumah Anda.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigasi</h4>
+        <a href="#home">Home</a>
+        <a href="#layanan">Service</a>
+        <a href="blog.html">Blog</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Hubungi Kami</h4>
+        <a class="footer-wa" href="https://wa.me/6285132479415" target="_blank" rel="noopener">💬 WhatsApp</a>
+      </div>
+      <div class="footer-col">
+        <h4>Jam Operasional</h4>
+        <p>Setiap hari<br><strong>09.00 – 21.00</strong></p>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="footer-copy">© 2026 Serena Home Spa. All rights reserved.</p>
+  </div>
+</footer>
+ 
+</body>
+</html>
+ 
