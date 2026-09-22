@@ -794,9 +794,33 @@ transportation{
   gap:12px;
 }
 
+/*
 .transportation h1{
   font-size: 20px;
   margin: 0;
+}
+
+.transportation {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+  */
+
+  .transportation h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.transportation {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.transportation .btn-primary,
+.transportation .btn-ghost {
+  align-self: flex-start;
 }
 
 .area-row{
@@ -861,6 +885,14 @@ transportation{
   text-align:center;
   color:#9BA69E;
   font-size:13px;
+}
+
+.footer-copy,
+.footer-copy-lp {
+  color:#9BA69E;
+  text-align: center;   /* atau "left", samakan dengan yang dipakai di footer sekarang */
+  margin: 0;
+  font-size: 14px;      /* samakan ukurannya juga kalau beda */
 }
 /*AKHIR FOOTER*/
 
@@ -1290,6 +1322,9 @@ transportation{
     </div>
     <div class="transportation">
       <h1># Gratis Biaya Transportasi</h1>
+      <a class="btn-primary" href="https://wa.me/6285132479415?text=Halo%20Serena%20Home%20Spa%2C%20saya%20mau%20booking." target="_blank" rel="noopener">
+    Booking Sekarang →
+  </a>
     </div>
   </div>
 </div>
@@ -1333,6 +1368,8 @@ transportation{
     </div>
     <hr class="footer-divider">
     <p class="footer-copy">© 2026 Serena Home Spa. All rights reserved.</p>
+    <br>
+    <p class="footer-copy-lp">Website by <a href="https://virtuedigitalagency.com" target="_blank" rel="noopener">Virtue Digital Agency</a></p>
   </div>
 </footer>
  
