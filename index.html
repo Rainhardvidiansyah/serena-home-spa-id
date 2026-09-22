@@ -879,6 +879,41 @@ transportation{
 }
 /*Gambar logo atas*/
 
+
+
+
+/*Awal Cara Pesan*/
+.steps h2 {
+  margin: 0 0 1.5rem;     /* jarak bawah judul, naikkan ke 2rem kalau mau lebih lega */
+}
+.steps-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+  counter-reset: step;
+}
+.steps-list li {
+  counter-increment: step;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  margin: 0; 
+}
+.steps-list li::before {
+  content: counter(step);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #2f4a3e;   /* ganti dengan warna brand */
+  color: #fff;
+  font-weight: 600;
+}
+/*Akhir Cara Pesan*/
+
 </style>
 </head>
 
@@ -1017,38 +1052,50 @@ transportation{
     <div class="wrap">
       <div class="section-head light-on-dark">
         <p class="eyebrow eyebrow-dark">Pilihan paket</p>
-        <h2 class="h2-dark">13 paket pijat panggilan, sesuai kebutuhan Anda.</h2>
+        <h2 class="h2-dark">9 paket pijat panggilan, sesuai kebutuhan Anda.</h2>
         <p class="p-dark"><b>Semua layanan kami datangi langsung ke rumah Anda.</b></p>
       </div>
  
       <div class="pkg-grid">
-        <article class="pkg-card">
-          <div class="pkg-img"><img src="assets/images/m-refleksi-kaki.jpeg" alt="Refleksi kaki"></div>
-          <h3 class="pkg-title">Refleksi Kaki</h3>
-          <p class="pkg-desc">Pijat titik refleksi pada telapak kaki untuk melancarkan sirkulasi darah dan meredakan kelelahan.</p>
-          <div class="pkg-prices">
-            <span>60 Menit = Rp78K</span>
-            <span>90 Menit = Rp125K</span>
-          </div>
-          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
-        </article>
- 
+
+
+
+
+
         <article class="pkg-card">
           <div class="pkg-img"><img src="assets/images/m-pijat-full-body.jpeg" alt="Pijat full body"></div>
           <h3 class="pkg-title">Pijat Full Body</h3>
           <p class="pkg-desc">Pijat seluruh tubuh untuk melepas pegal dan mengendurkan otot yang tegang akibat aktivitas harian.</p>
           <div class="pkg-prices">
-            <span>60 Menit = Rp99K</span>
+            <span>60 Menit = Rp100K</span>
+            <span>90 Menit = Rp150K</span>
           </div>
           <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
         </article>
+
+
+
+
+        <article class="pkg-card">
+          <div class="pkg-img"><img src="assets/images/m-refleksi-kaki.jpeg" alt="Refleksi kaki"></div>
+          <h3 class="pkg-title">Refleksi Kaki</h3>
+          <p class="pkg-desc">Pijat titik refleksi pada telapak kaki untuk melancarkan sirkulasi darah dan meredakan kelelahan.</p>
+          <div class="pkg-prices">
+            <span>60 Menit = Rp120K</span>
+            <span>90 Menit = Rp160K</span>
+          </div>
+          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
+        </article>
+ 
+        
  
         <article class="pkg-card">
           <div class="pkg-img"><img src="assets/images/m-pijat-kerokan.jpeg" alt="Pijat & Kerokan"></div>
           <h3 class="pkg-title">Pijat &amp; Kerokan</h3>
           <p class="pkg-desc">Kombinasi pijat dan kerokan tradisional untuk meredakan masuk angin, pegal, dan linu di badan.</p>
           <div class="pkg-prices">
-            <span>90 Menit = Rp144K</span>
+            <span>90 Menit = Rp160K</span>
+            <span>120 Menit = Rp200K</span>
           </div>
           <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
         </article>
@@ -1058,7 +1105,8 @@ transportation{
           <h3 class="pkg-title">Pijat + Totok Wajah</h3>
           <p class="pkg-desc">Kombinasi pijat tubuh dan totok wajah, merilekskan otot sekaligus menyegarkan wajah.</p>
           <div class="pkg-prices">
-            <span>90 Menit = Rp144K</span>
+            <span>90 Menit = Rp160K</span>
+            <span>120 Menit = Rp200K</span>
           </div>
           <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
         </article>
@@ -1068,12 +1116,63 @@ transportation{
           <h3 class="pkg-title">Pijat Hot Stone</h3>
           <p class="pkg-desc">Pijat dengan batu hangat untuk relaksasi yang lebih dalam dan melancarkan peredaran darah.</p>
           <div class="pkg-prices">
-            <span>90 Menit = Rp199K</span>
+            <span>90 Menit = Rp160K</span>
+            <span>120 Menit = Rp200K</span>
+          </div>
+          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
+        </article>
+ 
+        
+        <article class="pkg-card">
+          <div class="pkg-img"><img src="assets/images/m-fullbody-refleksi.jpeg" alt="Pijat Full Body + Refleksi"></div>
+          <h3 class="pkg-title">Pijat Full Body + Refleksi</h3>
+          <p class="pkg-desc">Perpaduan pijat seluruh tubuh dan refleksi kaki untuk manfaat relaksasi yang lebih menyeluruh.</p>
+          <div class="pkg-prices">
+            <span>90 Menit = Rp160K</span>
+            <span>120 Menit = Rp200K</span>
           </div>
           <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
         </article>
  
         <article class="pkg-card">
+          <div class="pkg-img"><img src="assets/images/m-pijat-bekam.jpeg" alt="Pijat + Bekam"></div>
+          <h3 class="pkg-title">Pijat + Bekam</h3>
+          <p class="pkg-desc">Pijat dan bekam untuk relaksasi dan membantu meredakan pegal otot.</p>
+          <div class="pkg-prices">
+            <span>60 Menit = Rp245K</span>
+            <span>90 Menit = Rp280K</span>
+          </div>
+          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
+        </article>
+ 
+        <article class="pkg-card">
+          <div class="pkg-img"><img src="assets/images/m-pijat-lulur.jpeg" alt="Pijat + Lulur"></div>
+          <h3 class="pkg-title">Pijat + Scrub Badan</h3>
+          <p class="pkg-desc">Pijat relaksasi dan scrub untuk tubuh yang lebih segar.</p>
+          <div class="pkg-prices">
+            <span>90 Menit = Rp170K</span>
+            <span>120 Menit = Rp260K</span>
+          </div>
+          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
+        </article>
+ 
+
+        <article class="pkg-card">
+          <div class="pkg-img"><img src="assets/images/reflexiology.jpg" alt="Refleksi"></div>
+          <h3 class="pkg-title">Refleksi</h3>
+          <p class="pkg-desc">Refleksi untuk membantu meredakan lelah dan membuat tubuh lebih rileks.</p>
+          <div class="pkg-prices">
+            <span>60 Menit = Rp100K</span>
+            <span>90 Menit = Rp150K</span>
+          </div>
+          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
+        </article>
+ 
+
+
+        <!-- DI BAWAH UNTUK BANDUNG -->
+
+        <!-- <article class="pkg-card">
           <div class="pkg-img"><img src="assets/images/m-slimming-fat.jpeg" alt="Terapi Slimming Fat"></div>
           <h3 class="pkg-title">Terapi Slimming Fat</h3>
           <p class="pkg-desc">Pijat khusus yang membantu membakar lemak dan membentuk kontur tubuh lebih ideal.</p>
@@ -1082,53 +1181,9 @@ transportation{
             <span>90 Menit = Rp198K</span>
           </div>
           <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
-        </article>
- 
-        <article class="pkg-card">
-          <div class="pkg-img"><img src="assets/images/m-fullbody-refleksi.jpeg" alt="Pijat Full Body + Refleksi"></div>
-          <h3 class="pkg-title">Pijat Full Body + Refleksi</h3>
-          <p class="pkg-desc">Perpaduan pijat seluruh tubuh dan refleksi kaki untuk manfaat relaksasi yang lebih menyeluruh.</p>
-          <div class="pkg-prices">
-            <span>90 Menit = Rp150K</span>
-            <span>120 Menit = Rp189K</span>
-          </div>
-          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
-        </article>
- 
-        <article class="pkg-card">
-          <div class="pkg-img"><img src="assets/images/m-pijat-bekam.jpeg" alt="Pijat + Bekam"></div>
-          <h3 class="pkg-title">Pijat + Bekam</h3>
-          <p class="pkg-desc">Pijat & bekam untuk keluarkan racun tubuh dan redakan nyeri otot.</p>
-          <div class="pkg-prices">
-            <span>60 Menit = Rp198K</span>
-            <span>90 Menit = Rp249K</span>
-            <!-- <span>120 Menit = Rp288K</span> -->
-          </div>
-          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
-        </article>
- 
-        <article class="pkg-card">
-          <div class="pkg-img"><img src="assets/images/m-pijat-lulur.jpeg" alt="Pijat + Lulur"></div>
-          <h3 class="pkg-title">Pijat + Lulur Badan</h3>
-          <p class="pkg-desc">Pijat dengan lulur untuk mengangkat sel kulit mati dan membuat kulit lebih halus dan cerah.</p>
-          <div class="pkg-prices">
-            <span>90 Menit = Rp165K</span>
-            <span>120 Menit = Rp192K</span>
-          </div>
-          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
-        </article>
- 
-        <article class="pkg-card">
-          <div class="pkg-img"><img src="assets/images/m-pra-melahirkan.jpeg" alt="Pijat Pra Melahirkan"></div>
-          <h3 class="pkg-title">Paket Pra Melahirkan</h3>
-          <p class="pkg-desc">Pijat khusus ibu hamil untuk meredakan pegal dan menenangkan tubuh menjelang persalinan.<sup>*</sup></p>
-          <div class="pkg-prices">
-            <span>90 Menit = Rp198K</span>
-          </div>
-          <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
-        </article>
- 
-        <article class="pkg-card">
+        </article> -->
+
+        <!-- <article class="pkg-card">
           <div class="pkg-img"><img src="assets/images/m-terapi-stroke.jpeg" alt="Terapi Stroke"></div>
           <h3 class="pkg-title">Terapi Stroke</h3>
           <p class="pkg-desc">Pijat terapi dengan teknik khusus untuk membantu proses pemulihan pasca-stroke.<sup>*</sup></p>
@@ -1136,9 +1191,9 @@ transportation{
             <span>90 Menit = Rp144K</span>
           </div>
           <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
-        </article>
+        </article> -->
  
-        <article class="pkg-card">
+        <!-- <article class="pkg-card">
           <div class="pkg-img"><img src="assets/images/m-terapi-diabetes.jpeg" alt="Terapi Diabetes"></div>
           <h3 class="pkg-title">Terapi Diabetes</h3>
           <p class="pkg-desc">Pijat terapi pada titik-titik tertentu sebagai pelengkap relaksasi bagi penderita diabetes.<sup>*</sup></p>
@@ -1146,9 +1201,9 @@ transportation{
             <span>90 Menit = Rp144K</span>
           </div>
           <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
-        </article>
+        </article> -->
  
-        <article class="pkg-card">
+        <!-- <article class="pkg-card">
           <div class="pkg-img"><img src="assets/images/m-terapi-otot.jpeg" alt="Pijat Cedera Otot"></div>
           <h3 class="pkg-title">Pijat Cedera Otot</h3>
           <p class="pkg-desc">Pijat terapi untuk membantu pemulihan otot yang cedera atau mengalami ketegangan berlebih.<sup>*</sup></p>
@@ -1157,18 +1212,39 @@ transportation{
             <span>120 Menit = Rp210K</span>
           </div>
           <a class="pkg-btn" href="https://wa.me/6285132479415" target="_blank" rel="noopener">Pesan Sekarang</a>
-        </article>
+        </article> -->
+
+        
+
+
  
        
     </div>
   </section>
  
+
+  <!-- Cara Pesan -->
+  <section id="cara-pesan" class="steps">
+  <div class="wrap">
+    <h2>Cara pesan mudah</h2>
+    <ol class="steps-list">
+      <li><strong>Chat WhatsApp</strong><span>Sebutkan paket, alamat, dan jam.</span></li>
+      <li><strong>Konfirmasi</strong><span>Kami atur jadwal dan terapis.</span></li>
+      <li><strong>Terapis datang</strong><span>Langsung ke rumah Anda.</span></li>
+      <li><strong>Pijat &amp; santai</strong><span>Pembayaran sesuai ketentuan.</span></li>
+    </ol>
+  </div>
+</section>
+
+
+
+
   <!-- ================= TESTIMONI ================= -->
   <section id="testimoni" class="testimoni-section">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Kata mereka</p>
-      <h2>Pekerja kantoran yang sudah lebih tenang.</h2>
+      <h2>Tubuh lebih rileks setelah dipijat.</h2>
     </div>
     <div class="testimonials">
       <div class="t-card">
@@ -1189,7 +1265,6 @@ transportation{
  
 
   
-   <!-- ================= AREA LAYANAN ================= -->
   <!-- ================= AREA LAYANAN ================= -->
 <div id="area"class="wrap">
   <div class="area-row">
@@ -1204,6 +1279,7 @@ transportation{
         <span class="area-chip">📍 Jakarta Pusat</span>
         <span class="area-chip">📍 Jakarta Timur</span>
         <span class="area-chip">📍 Jakarta Barat</span>
+        <span class="area-chip">📍 Depok</span>
       </div>
     </div>
     <div class="transportation">
