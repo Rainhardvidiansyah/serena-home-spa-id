@@ -1,41 +1,53 @@
 <!-- Tempel menggantikan blok <title> sampai </script> JSON-LD di dalam <head> -->
-
+<!-- ================================================================
+     SERENA HOME SPA — JAKARTA
+     Cari & ganti sebelum publish:
+       [GANTI_DOMAIN]     -> domain asli, contoh: serenahomespa-jakarta.id
+       [GANTI_NOMOR_HP]   -> nomor WA/telepon asli owner Jakarta (format: 62xxxxxxxxxx)
+       hasOfferCatalog    -> sesuaikan dengan paket & harga yang benar-benar dijual
+       priceRange         -> sesuaikan harga termurah - termahal yang benar
+================================================================ -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
 <title>Pijat Panggilan Jakarta — Serena Home Spa</title>
-<meta name="description" content="Jasa pijat panggilan Jakarta, Jakarta Utara, Jakarta Selatan, Jakarta Pusat, Jakarta TImur, Jakarta Barat & Depok serta Tangerang. Refleksi, tradisional, deep tissue mulai Rp100 ribuan. Terapis ke rumah, buka 09.00–21.00. Booking via WhatsApp.">
+<meta name="description" content="Jasa pijat panggilan se-Jabodetabek (Jakarta, Tangerang, Depok, Bekasi). Refleksi, tradisional, deep tissue mulai Rp100 ribuan. Terapis ke rumah, buka 09.00–21.00. Booking via WhatsApp.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.serenahomespa.id/">
+<link rel="canonical" href="https://www.[GANTI_DOMAIN]/">
+
+<link rel="icon" href="assets/images/serena3.ico" type="image/x-icon">
 
 <!-- Open Graph / sosial media -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Serena Home Spa">
-<meta property="og:title" content="Serena Home Spa — Pijat Panggilan & Refleksi untuk Pekerja Lelah">
-<meta property="og:description" content="Layanan pijat panggilan tradisional, refleksi, dan deep tissue langsung ke rumah Anda. Booking via WhatsApp.">
-<meta property="og:url" content="https://www.serenahomespa.id/">
+<meta property="og:title" content="Serena Home Spa Jakarta — Pijat Panggilan & Refleksi">
+<meta property="og:description" content="Layanan pijat panggilan tradisional, refleksi, dan deep tissue langsung ke rumah Anda di Jakarta, Tangerang, Depok & Bekasi. Booking via WhatsApp.">
+<meta property="og:url" content="https://www.[GANTI_DOMAIN]/">
 <meta property="og:locale" content="id_ID">
 <!-- PENTING: file og-image.jpg (1200x630px) harus benar-benar ada di root situs -->
-<meta property="og:image" content="https://www.serenahomespa.id/og-image.jpg">
+<meta property="og:image" content="https://www.[GANTI_DOMAIN]/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Layanan pijat panggilan Serena Home Spa di Jakarta">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Serena Home Spa — Pijat Panggilan & Refleksi untuk Pekerja Lelah">
-<meta name="twitter:description" content="Layanan pijat panggilan tradisional, refleksi, dan deep tissue langsung ke rumah Anda.">
-<meta name="twitter:image" content="https://www.serenahomespa.id/og-image.jpg">
+<meta name="twitter:title" content="Serena Home Spa Jakarta — Pijat Panggilan & Refleksi">
+<meta name="twitter:description" content="Layanan pijat panggilan tradisional, refleksi, dan deep tissue langsung ke rumah Anda di Jakarta, Tangerang, Depok & Bekasi.">
+<meta name="twitter:image" content="https://www.[GANTI_DOMAIN]/og-image.jpg">
 <meta name="twitter:image:alt" content="Layanan pijat panggilan Serena Home Spa di Jakarta">
 
 <!-- Data terstruktur untuk Google (LocalBusiness).
-     Kalau sudah ada Instagram / Google Business Profile, tambahkan "sameAs": ["https://..."] -->
+     Kalau sudah ada Instagram / Google Business Profile Jakarta, tambahkan "sameAs": ["https://..."] -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "HealthAndBeautyBusiness",
-  "@id": "https://www.serenahomespa.id/#business",
+  "@id": "https://www.[GANTI_DOMAIN]/#business",
   "name": "Serena Home Spa",
-  "description": "Jasa pijat panggilan (tradisional, refleksi, pijat full body). Terapis datang langsung ke rumah di Jakarta dan sekitarnya.",
-  "image": "https://www.serenahomespa.id/og-image.jpg",
-  "url": "https://www.serenahomespa.id/",
-  "telephone": "+6285132479415",
+  "description": "Jasa pijat panggilan (tradisional, refleksi, deep tissue). Terapis datang langsung ke rumah di Jakarta, Tangerang, Depok, dan Bekasi.",
+  "image": "https://www.[GANTI_DOMAIN]/og-image.jpg",
+  "url": "https://www.[GANTI_DOMAIN]/",
+  "telephone": "+62[GANTI_NOMOR_HP]",
   "priceRange": "Rp100.000 - Rp250.000",
   "address": {
     "@type": "PostalAddress",
@@ -45,7 +57,9 @@
   },
   "areaServed": [
     { "@type": "City", "name": "Jakarta" },
-    { "@type": "City", "name": "Cimahi" },
+    { "@type": "City", "name": "Tangerang" },
+    { "@type": "City", "name": "Depok" },
+    { "@type": "City", "name": "Bekasi" },
     { "@type": "AdministrativeArea", "name": "DKI Jakarta" }
   ],
   "openingHoursSpecification": {
@@ -66,7 +80,7 @@
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Terapi Slimming Fat" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pijat Full Body + Refleksi" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pijat + Bekam" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pijat + Lulur Badan" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pijat + Scrub Badan" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paket Pra Melahirkan" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Terapi Stroke" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Terapi Diabetes" } },
@@ -75,10 +89,8 @@
   }
 }
 </script>
- 
+
 <style>
-
-
   :root{
     --bg:        #efe8db;
     --bg-soft:   #E4DFD5;
@@ -472,7 +484,7 @@
     margin-bottom:24px;
   }
 
-  
+
   .pkg-btn{
     display:block;
     text-align:center;
@@ -1030,20 +1042,20 @@ transportation{
     </div>
     <div class="benefits">
       <div class="benefit">
-        <h3>Tulus</h3>
-        <p>Pelayanan yang sungguh-sungguh, bukan sekadar transaksi.</p>
+        <h3>Terapis Berpengalaman</h3>
+        <p>Memberikan layanan pijat dengan perhatian dan pelayanan yang nyaman.</p>
       </div>
       <div class="benefit">
-        <h3>Amanah</h3>
-        <p>Jadwal, harga, dan kualitas layanan selalu sesuai yang dijanjikan.</p>
+        <h3>Tepat Waktu</h3>
+        <p>Datang sesuai jadwal, melayani dengan sepenuh perhatian.</p>
       </div>
       <div class="benefit">
         <h3>Profesional</h3>
         <p>Terapis terlatih dengan teknik yang tepat dan aman.</p>
       </div>
       <div class="benefit">
-        <h3>Tenang</h3>
-        <p>Suasana yang menenangkan di setiap sesi, dari awal hingga akhir.</p>
+        <h3>Terapis Bersertifikat</h3>
+        <p>Memberikan layanan dengan keterampilan dan pengetahuan yang terlatih.</p>
       </div>
     </div>
   </div>
